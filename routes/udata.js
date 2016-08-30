@@ -2,8 +2,12 @@ var express = require('express')
 var router = express.Router()
 
 var monk = require('monk')
-var db = monk('localhost:27017/KLM_DEMO_DB')
+var db = monk('ds019826.mlab.com:19826/klm_demo_db',{username: 'jagajan', password: 'klmchatbot@92'})
 var collection = db.get('UserDetails')
+
+console.log(":==============> collection : " + collection);
+
+
 
 router.get('/', function(req, res){
 	collection.find({}, function(err, udata){
