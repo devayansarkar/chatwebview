@@ -1,0 +1,21 @@
+<h1>Admin : View Data!</h1>
+<ul ng-repeat='usrdata in udata'>
+	<li>
+		<b><a href="/#/udata/{{usrdata._id}}">{{usrdata._id}}</a></b>
+		<a href="/#/delete-udata/{{usrdata._id}}"><i class="glyphicon glyphicon-remove"></i></a>
+		<ul>
+			<li>title: {{usrdata.title}}</li>
+			<li>fname: {{usrdata.fname}}</li>
+			<li>lname: {{usrdata.lname}}</li>
+			<li>ffnum: {{usrdata.ffnum}}</li>
+			<li>email: {{usrdata.email}}</li>
+			<li>offerfbm: {{usrdata.offerfbm}}</li>
+			<li>fbluenum: {{usrdata.fbluenum}}</li>
+			<li>updatefbm: {{usrdata.updatefbm}}</li>
+			<li>passengertype: {{usrdata.passengertype}}</li>
+		</ul>
+	</li>
+</ul>
+<p>
+	<a href="/#/add-udata">Add a Passenger Information</a>
+</p>

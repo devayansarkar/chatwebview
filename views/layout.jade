@@ -1,0 +1,17 @@
+doctype html
+html(ng-app='klmapp')
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css')
+
+    script(src='//ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.js')
+    script(src='//ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-resource.js')
+    script(src='//ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-route.js')
+    script(src='//ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-animate.js')
+    script(src='//ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-sanitize.js')
+    script(src='//angular-ui.github.io/bootstrap/ui-bootstrap-tpls-2.1.3.js')
+    script(src='/javascripts/main.js')
+    
+  body
+    block content

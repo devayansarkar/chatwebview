@@ -1,0 +1,54 @@
+<p><a href="#/">Home</a></p>
+
+<h1>Passanger Information</h1>
+
+<uib-accordion close-others="oneAtATime">
+    <div uib-accordion-group class="panel-default" heading="{{group.title}}" ng-repeat="group in groups">
+      <form>
+		<div class="form-group">
+			<label>Conversation ID : {{cid}}</label>
+		</div>
+		<div class="form-group">
+			<label for="title">Title</label>
+			<select id="title" class="form-control" ng-model="usrdata.title" ng-options="x for x in titledd"></select>
+		</div>
+		<div class="form-group">
+			<label for="f_name">First Name</label>
+			<input id="f_name" class="form-control" ng-model="usrdata.fname">
+		</div>
+		<div class="form-group">
+			<label for="l_name">Last Name</label>
+			<input id="l_name" class="form-control" ng-model="usrdata.lname">
+		</div>
+		<div class="checkbox">
+		  <label><input type="checkbox" ng-model="usrdata.ffnum">Are you a member of frequent flyer programme?</label>
+		</div>
+		<div class="checkbox">
+		  <label><input type="checkbox" ng-model="usrdata.fbluenum">Are you a member of BlueBiz programme?</label>
+		</div>
+
+		<p><h3>Contact Information</h3></p>
+		<div class="form-group">
+			<label for="u_email">Email Address</label>
+			<input id="u_email" class="form-control" ng-model="usrdata.email">
+		</div>
+		<div class="form-group">
+			<label for="c_email">Confirm Email Address</label>
+			<input id="c_email" class="form-control" ng-model="usrdata.cemail">
+		</div>
+
+		<p><h3>Update via Facebook Messenger</h3></p>
+		<div class="checkbox">
+		  <label><input type="checkbox" ng-model="usrdata.updatefbm" value="">Send flight updates via Messenger</label>
+		</div>
+		<div class="checkbox">
+		  <label><input type="checkbox" ng-model="usrdata.offerfbm" value="">Inform me via Messenger about cool offers and deals</label>
+		</div>
+
+		<input type="button" id="save_btn" class="btn btn-primary" value="Confirm Passanger {{adults}}" ng-click="save()">
+	</form>
+
+    </div>
+</uib-accordion>
+
+
