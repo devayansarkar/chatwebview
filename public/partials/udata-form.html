@@ -2,8 +2,6 @@
 
 <h1>Passanger Information</h1>
 
-<uib-accordion close-others="oneAtATime">
-    <div uib-accordion-group class="panel-default" heading="{{group.title}}" ng-repeat="group in groups">
       <form>
 		<div class="form-group">
 			<label>Conversation ID : {{cid}}</label>
@@ -48,7 +46,5 @@
 		<input type="button" id="save_btn" class="btn btn-primary" value="Confirm Passanger {{adults}}" ng-click="save()">
 	</form>
 
-    </div>
-</uib-accordion>
 
 
